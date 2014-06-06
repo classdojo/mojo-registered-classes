@@ -1,10 +1,10 @@
 {
   "name": "mojo-registered-classes",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha ."
+    "test": "mocha"
   },
   "repository": {
     "type": "git",

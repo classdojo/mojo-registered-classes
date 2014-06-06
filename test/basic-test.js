@@ -39,4 +39,14 @@ describe("registered-classes#", function () {
     rc.create("c1", 2);
   });
 
+  it("throws an error if a class doesn't exist", function () {
+    var err;
+    try {
+      new RegisteredClasses().create("c1");
+    } catch (e) {
+      err = e;
+    }
+    expect(err.message).to.be("class 'c1' doesn't exist");
+  });
+
 });

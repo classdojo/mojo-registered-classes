@@ -49,4 +49,11 @@ describe("registered-classes#", function () {
     expect(err.message).to.be("class 'c1' doesn't exist");
   });
 
+
+  it("lowercases the first character of a class name", function () {
+    var rc = new RegisteredClasses(), c1;
+    rc.register("ClassOne", c1 = function(){});
+    expect(rc._classes.classOne).to.be(c1);
+  })
+
 });
